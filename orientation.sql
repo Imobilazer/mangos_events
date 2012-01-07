@@ -45,7 +45,11 @@ REPLACE INTO `quest_template` (`entry`, `Method`, `ZoneOrSort`, `MinLevel`, `Que
 update `quest_template` set `QuestFlags`='32768',`limitTime`=3600 where `entry` in (30001,30002,30003,30004,30005,30006);
 update `quest_template` set `CharTitleId`=0, `rewchoiceitemId4`= 39656,`rewchoiceitemId5`=0, `rewchoiceitemcount5`=0 where `entry`=30006;
 
-REPLACE INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES ('15000', '0', '18', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '');
+REPLACE INTO `quest_end_scripts` (`id`, `delay`, `command`, `datalong`, `datalong2`, `datalong3`, `datalong4`, `data_flags`, `dataint`, `dataint2`, `dataint3`, `dataint4`, `x`, `y`, `z`, `o`, `comments`) VALUES ('15000', '0', '18', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', ''),
+('15000', '0', '0', '6', '131', '30', '0', '0', '2000006001', '0', '0', '0', '0', '0', '0', '0', '');
+
+REPLACE INTO `db_script_string` (`entry`, `content_default`, `content_loc1`, `content_loc2`, `content_loc3`, `content_loc4`, `content_loc5`, `content_loc6`, `content_loc7`, `content_loc8`) VALUES
+(2000006001, 'Внимание! Победитель эвента Ориентирование - $N!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 REPLACE INTO `creature_questrelation` (`id`, `quest`) VALUES ('131', '30001');
 REPLACE INTO `gameobject_questrelation` (`id`, `quest`) VALUES ('500001', '30002'), ('500002', '30003'), ('500003', '30004'), ('500004', '30005'), ('500005', '30006');
