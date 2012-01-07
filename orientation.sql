@@ -3,7 +3,7 @@ REPLACE INTO `creature_template` (`entry`, `difficulty_entry_1`, `difficulty_ent
 
 DELETE FROM `creature` WHERE `id`=131;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `modelid`, `equipment_id`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `currentwaypoint`, `curhealth`, `curmana`, `DeathState`, `MovementType`) VALUES
-(456402, 131, 571, 1, 65534, 0, 0, 5808.57, 559.564, 650.353, 1.10593, 25, 5, 0, 9000, 0, 0, 2);
+(456402, 131, 571, 1, 65534, 0, 0, 5808.57, 559.564, 650.353, 1.10593, 7600, 5, 0, 9000, 0, 0, 2);
 
 DELETE FROM `creature_movement` WHERE `id`=456402;
 INSERT INTO `creature_movement` (`id`, `point`, `position_x`, `position_y`, `position_z`, `waittime`, `script_id`, `textid1`, `textid2`, `textid3`, `textid4`, `textid5`, `emote`, `spell`, `wpguid`, `orientation`, `model1`, `model2`) VALUES
