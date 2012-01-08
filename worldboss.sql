@@ -51,6 +51,5 @@ INSERT INTO `creature_ai_texts` (`entry`, `content_default`, `content_loc1`, `co
 REPLACE INTO `mangos`.`game_event` (`entry`, `start_time`, `end_time`, `occurence`, `length`, `holiday`, `description`) VALUES ('110', '2011-12-10 00:20:00', '2099-01-01 23:59:59', '10080', '90', '0', 'WorldBoss by Imobi');
 REPLACE INTO `mangos`.`game_event_creature` (`guid`, `event`) VALUES ('954704', '110');
 
-
 -- Лут стоит с Короля-лича 25 героик
 -- by Imobilazer
